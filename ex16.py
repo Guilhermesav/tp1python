@@ -2,7 +2,8 @@
 import psutil,time
 print(time.thread_time())
 tempos = psutil.cpu_times(percpu=True)
-
+print(tempos)
 for cpu in tempos:
     for i in cpu:
-        print(int(cpu[i]*1000))
+        x =cpu[i]
+        print(x)
